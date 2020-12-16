@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+    <application name="visionary_ap_digitalio">
+        <crown name="DigitalIOSample">
+            <desc>user script</desc>
+            <serves/>
+        </crown>
+        <crown name="Connector">
+            <uses/>
+            <crown name="DigitalOut">
+                <uses>
+                    <function name="create"/>
+                    <function name="set"/>
+                </uses>
+            </crown>
+            <crown name="DigitalIn">
+                <uses>
+                    <event name="OnChange"/>
+                    <function name="create"/>
+                    <function name="register"/>
+                </uses>
+            </crown>
+        </crown>
+        <crown name="Script">
+            <uses>
+                <function name="sleep"/>
+                <function name="register"/>
+            </uses>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">1.0</meta>
+        <meta key="licensed">false</meta>
+        <meta key="priority">low</meta>
+        <meta key="read-protected">false</meta>
+        <meta key="copy-protected">false</meta>
+        <entry path="scripts" default="DigitalIOSample.lua"/>
+    </application>
+</manifest>
